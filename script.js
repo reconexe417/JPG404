@@ -18,7 +18,7 @@ async function image_search() {
 
     try {
 
-        const url = `http://localhost:3000/api/images?q=${encodeURIComponent(keyword)}`;
+        const url = `https://wallhaven.cc/api/v1/search?q=${encodeURIComponent(keyword)}`;
         const response = await fetch(`${url}?${keyword}`);
         const data = await response.json();
 
